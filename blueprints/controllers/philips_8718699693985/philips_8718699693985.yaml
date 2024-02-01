@@ -161,7 +161,8 @@ variables:
   # build data to send within a controller event
   controller_entity: !input controller_entity
   controller_device: !input controller_device
-  controller_id: '{% if integration_id=="zigbee2mqtt" %}{{controller_entity}}{% else %}{{controller_device}}{% endif %}'mode: restart
+  controller_id: '{% if integration_id=="zigbee2mqtt" %}{{controller_entity}}{% else %}{{controller_device}}{% endif %}'
+mode: restart
 max_exceeded: silent
 trigger:
   # trigger for zigbee2mqtt
