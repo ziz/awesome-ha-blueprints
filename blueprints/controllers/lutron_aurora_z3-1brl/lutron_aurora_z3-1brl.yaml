@@ -74,3 +74,4 @@ action:
             target: '{{ selected_light }}'
             data:
               brightness: '{{ brightness }}'
+              transition: 0.2
