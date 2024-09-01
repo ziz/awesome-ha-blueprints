@@ -60,7 +60,8 @@ action:
     - '{{ presstype == 7 || ( presstype == 2 && brightness == 0) }}'
     sequence:
     - service: light.toggle
-      target: '{{ selected_light }}'  - conditions:
+      target: '{{ selected_light }}'  
+  - conditions:
     - '{{ command == ''move_to_level_with_on_off'' }}'
     - '{{ brightness != prior_brightness }}'
     - '{{ presstype == 2 && brightness != 0 }}'
